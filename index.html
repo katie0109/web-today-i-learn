@@ -1,114 +1,134 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <!-- TODO: Open Graph 메타 태그를 설정하세요 -->
-    <!-- <meta property="og:title" content="페이지 제목" /> -->
-    <!-- <meta property="og:description" content="페이지 설명" /> -->
-    <!-- <meta property="og:image" content="./images/thumbnail.jpg" /> -->
+    <meta property="og:title" content="모스의 TIL & 아카이브" />
+    <meta property="og:description" content="자기소개, 갤러리, 인생 작품, 오늘 배운 내용을 기록한 개인 페이지" />
+    <meta property="og:image" content="./images/og-image.svg" />
 
-    <title>Today I Learn</title>
+    <title>모스의 Today I Learned</title>
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/index.js" defer></script>
   </head>
   <body>
-    <!-- 상단 내비게이션 -->
-    <nav class="top-nav">
-      <span class="nav-logo">My Page</span>
-      <ul class="nav-links">
-        <li><a href="#about">자기소개</a></li>
-        <li><a href="#gallery">갤러리</a></li>
-        <li><a href="#works">인생 작품</a></li>
-        <li><a href="#til">TIL</a></li>
-      </ul>
-    </nav>
-
-    <!-- 프로필 히어로 -->
-    <section class="hero" id="about">
-      <div class="profile-card">
-        <div class="profile-image">
-          <!-- TODO: 프로필 이미지를 넣어주세요 -->
-          <!-- <img src="./images/profile.jpg" alt="프로필 사진" /> -->
-        </div>
-        <div class="profile-info">
-          <h1>닉네임</h1>
-          <p class="tagline">한 줄 소개를 작성해주세요.</p>
-        </div>
-      </div>
-    </section>
+    <header>
+      <nav class="top-nav">
+        <span class="nav-logo">My Page</span>
+        <ul class="nav-links">
+          <li><a href="#profile">프로필</a></li>
+          <li><a href="#intro">자기소개</a></li>
+          <li><a href="#info">기본 정보</a></li>
+          <li><a href="#gallery">갤러리</a></li>
+          <li><a href="#works">인생 작품</a></li>
+          <li><a href="#til">TIL</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
-      <!-- 자기소개 -->
-      <section class="content-section">
-        <h2>자기소개</h2>
-        <p>자기소개를 작성해주세요.</p>
-        <!-- TODO: 소개 글 안에 블로그, GitHub 등 관련 링크를 <a> 태그로 연결하세요 -->
+      <section class="hero" id="profile">
+        <div class="profile-card">
+          <div class="profile-image">
+            <img src="./images/profile.png" alt="모스의 프로필 사진" />
+          </div>
+          <div class="profile-info">
+            <h1>모스</h1>
+            <p class="tagline">안녕하세요 안드로이드 8기 모스입니다!</p>
+          </div>
+        </div>
       </section>
 
-      <!-- 기본 정보 -->
+      <section class="content-section" id="intro">
+        <h2>자기소개</h2>
+        <p>
+          새로운 경험과 배움을 통해 스스로를 넓혀가고 있습니다.<br>
+          아직 부족한 점이 많다고 느끼지만, 그만큼 꾸준히 배우고 성장해 나가려고 합니다.
+        </p>
+      </section>
+
       <section class="content-section" id="info">
         <h2>기본 정보</h2>
-        <!-- TODO: 자신의 기본 정보를 표(<table>)로 정리하세요 -->
         <table class="info-table">
           <tr>
             <th>이름</th>
-            <td></td>
+            <td>노윤지</td>
           </tr>
           <tr>
             <th>MBTI</th>
-            <td></td>
+            <td>INFP</td>
           </tr>
           <tr>
             <th>취미</th>
-            <td></td>
+            <td>여행 가기, 유튜브 보기</td>
           </tr>
           <tr>
             <th>좋아하는 음식</th>
-            <td></td>
+            <td>망고, 마라탕</td>
           </tr>
         </table>
       </section>
 
-      <!-- 나만의 갤러리 -->
       <section class="content-section" id="gallery">
         <h2>나만의 갤러리</h2>
-        <p class="section-desc">갤러리 부제를 작성해주세요. (예: 기억에 남는 여행지)</p>
+        <p class="section-desc">부제: 여행 갔다온 곳</p>
         <div class="gallery-grid">
-          <!-- TODO: 9장의 이미지를 배치하세요 -->
-          <!--
-          <img src="./images/gallery-1.jpg" alt="갤러리 이미지 1" />
-          <img src="./images/gallery-2.jpg" alt="갤러리 이미지 2" />
-          ...
-          -->
+          <img src="./images/gallery-1.jpg" alt="크리스마스 마켓" />
+          <img src="./images/gallery-2.jpg" alt="프라하" />
+          <img src="./images/gallery-3.png" alt="프라하성" />
+          <img src="./images/gallery-4.jpg" alt="베네치아" />
+          <img src="./images/gallery-5.jpg" alt="류블랴나" />
+          <img src="./images/gallery-6.jpg" alt="비엔나" />
+          <img src="./images/gallery-7.jpg" alt="나트랑" />
+          <img src="./images/gallery-8.jpg" alt="홍콩" />
+          <img src="./images/gallery-9.jpg" alt="싱가포르" />
         </div>
       </section>
 
-      <!-- 나를 울린 인생 작품 -->
       <section class="content-section" id="works">
         <h2>나를 울린 인생 작품</h2>
-        <div class="works-list">
-          <!-- TODO: 최소 2가지 작품을 소개하세요 -->
-          <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
-          <article class="work-card">
-            <div class="work-thumbnail">
-              <!-- 작품 이미지 -->
-            </div>
-            <div class="work-info">
-              <h3>작품 제목</h3>
-              <p>작품에 대한 설명을 작성해주세요.</p>
-            </div>
-          </article>
-        </div>
+        <ol class="works-list">
+          <li class="work-card">
+            <article>
+              <div class="work-thumbnail">
+                <img src="./images/work-1.png" alt="너의 이름은 영화 포스터 스타일 이미지" />
+              </div>
+              <div class="work-info">
+                <h3>너의 이름은 (영화)</h3>
+                <p>서로 다른 시간과 공간을 넘나드는 두 인물의 연결이 섬세하게 그려져서, 볼 때마다 여운이 오래 남습니다.</p>
+                <iframe
+                  src="https://www.youtube.com/embed/xU47nhruN-Q?rel=0&playsinline=1"
+                  title="너의 이름은 예고편"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  loading="lazy"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  영상이 보이지 않으면
+                  <a href="https://www.youtube.com/watch?v=xU47nhruN-Q" target="_blank" rel="noreferrer noopener">유튜브에서 보기</a>
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="work-card">
+            <article>
+              <div class="work-thumbnail">
+                <img src="./images/work-2.jpg" alt="웹툰 낮에 뜨는 달 포스터 스타일 이미지" />
+              </div>
+              <div class="work-info">
+                <h3>낮에 뜨는 달 (웹툰)</h3>
+                <p>감정선이 섬세하게 쌓이는 전개와 캐릭터의 서사가 인상 깊어서 여러 번 다시 본 인생 웹툰입니다.</p>
+              </div>
+            </article>
+          </li>
+        </ol>
       </section>
 
-      <!-- TIL (Today I Learned) -->
       <section class="content-section" id="til">
         <h2>TIL</h2>
         <p class="section-desc">오늘 새롭게 배운 것들을 기록합니다.</p>
 
-        <!-- TIL 작성 폼 -->
         <form class="til-form" id="til-form">
           <div class="form-group">
             <label for="til-date">날짜</label>
@@ -128,21 +148,18 @@
           </div>
         </form>
 
-        <!-- TIL 목록: 폼으로 등록하면 여기에 항목이 추가됩니다 -->
         <div class="til-list" id="til-list">
-          <!-- 아래는 예시 항목입니다. 자유롭게 수정하거나 삭제하세요 -->
           <article class="til-item">
-            <time>2026-03-15</time>
+            <time>2026-03-18</time>
             <h3>HTML 시멘틱 태그</h3>
             <p>header, nav, main, section, article, footer 등 시멘틱 태그의 역할과 사용법을 배웠다.</p>
           </article>
         </div>
       </section>
-
     </main>
 
     <footer>
-      <p>&copy; My Page</p>
+      <p>&copy; 2026 Moss Archive</p>
     </footer>
   </body>
 </html>
